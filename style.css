@@ -1,0 +1,56 @@
+/* Reset some browser defaults */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  #listBooks {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  #listBooks:hover {
+    background: #45a049;
+    transform: scale(1.05);
+  }
+  
+  #listBooks:active {
+    background: #388E3C;
+  }
+  
+  #output {
+    margin-top: 20px;
+    text-align: left;
+    background: #f1f1f1;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
