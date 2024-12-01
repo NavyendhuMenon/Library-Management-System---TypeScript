@@ -1,3 +1,4 @@
+//book.ts
 export class Book {
     constructor(title, author, isbn, isAvailable = true) {
         this.title = title;

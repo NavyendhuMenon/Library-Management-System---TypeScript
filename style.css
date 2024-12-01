@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background: #f9f9f9;
     color: #333;
+    line-height: 1.6;
   }
   
   .container {
@@ -14,6 +15,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    overflow: hidden;
   }
   
   h1 {
@@ -23,26 +25,36 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   }
   
-  #listBooks {
+  /* Style for buttons */
+  button {
     background: #4CAF50;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    padding: 12px 20px;
+    font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
   }
   
-  #listBooks:hover {
+  button:hover {
     background: #45a049;
     transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
   }
   
-  #listBooks:active {
+  button:active {
     background: #388E3C;
+    transform: scale(1);
   }
   
+  /* Separate each button clearly */
+  button + button {
+    margin-left: 10px;
+  }
+  
+  /* Output section */
   #output {
     margin-top: 20px;
     text-align: left;
@@ -50,7 +62,54 @@ body {
     border-radius: 5px;
     padding: 15px;
     min-height: 100px;
+    max-height: 300px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* List styling for book output */
+  #output h2 {
+    font-size: 1.5rem;
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #output ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #output ul li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #output ul li:nth-child(odd) {
+    background: #e8f5e9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+    }
+  
+    #output {
+      font-size: 0.85rem;
+      padding: 10px;
+    }
   }
   

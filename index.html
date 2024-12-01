@@ -9,11 +9,34 @@
 <body>
   <div class="container">
     <h1>Library Management System</h1>
-    <div id="app">
-      <button id="listBooks">List Books</button>
-      <div id="output"></div>
-    </div>
+    
+    <!-- Add Book Section -->
+    <h3>Add a Book</h3>
+    <form id="addBookForm">
+      <input type="text" id="bookTitle" placeholder="Book Title" required>
+      <input type="text" id="bookAuthor" placeholder="Book Author" required>
+      <input type="text" id="bookIsbn" placeholder="Book ISBN" required>
+      <button type="submit">Add Book</button>
+    </form>
+
+    <!-- Borrow/Return Book Section -->
+    <h3>Borrow or Return a Book</h3>
+    <input type="text" id="memberName" placeholder="Member Name" required>
+    <select id="bookSelect">
+      <option value="">Select a Book</option>
+    </select>
+    <button id="borrowBook">Borrow Book</button>
+    <button id="returnBook">Return Book</button>
+
+    <!-- Buttons to List Books and Borrowed Books -->
+    <button id="listBooks">List All Books</button>
+    <button id="listBorrowedBooks">List Borrowed Books</button>
+
+    <!-- Output Section -->
+    <div id="output"></div>
   </div>
-  <script src="dist/Main.js"></script>
+  
+  <script type="module" src="dist/Main.js"></script>
 </body>
 </html>
+

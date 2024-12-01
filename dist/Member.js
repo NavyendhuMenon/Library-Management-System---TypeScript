@@ -1,3 +1,4 @@
+//member.ts
 export class Member {
     constructor(name, memberId) {
         this.name = name;
